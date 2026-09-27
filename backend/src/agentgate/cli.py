@@ -7,6 +7,7 @@ from pathlib import Path
 from typing import Optional
 
 import typer
+from sqlalchemy import select
 
 from agentgate import __version__
 from agentgate.config import find_repo_root, load_agent_spec, load_dataset, load_gates, load_pricing, load_project_config
@@ -15,7 +16,7 @@ from agentgate.errors import AgentGateError
 from agentgate.gates import apply_gate
 from agentgate.github_api import build_comment, post_pull_request_comment
 from agentgate.service import replay_project, run_project
-from agentgate.storage import make_session_factory, save_project, save_run
+from agentgate.storage import RunRow, make_session_factory, save_project, save_run
 from agentgate.variance import summarize_trials
 
 app = typer.Typer(add_completion=False, no_args_is_help=True, help="CI/CD release gates for AI agents.")
@@ -231,6 +232,10 @@ def demo(
 
     root = find_repo_root()
     factory = make_session_factory(database)
+    with factory() as existing_db:
+        if existing_db.scalar(select(RunRow.id).limit(1)):
+            typer.echo("Demonstration runs already stored.")
+            return
     created = datetime.now(timezone.utc).isoformat()
     scenarios = [
         ("regressed", "Break: late returns are approved."),

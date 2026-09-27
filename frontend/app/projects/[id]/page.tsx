@@ -4,6 +4,12 @@ import { RunTable } from "@/components/RunTable";
 import { apiGet } from "@/lib/api";
 import type { RunSummary } from "@/lib/types";
 
+const CHANGE: Record<string, string> = {
+  regressed: "Approves returns after 30 days",
+  fixed: "Treats day 30 as allowed and refuses later returns",
+  cautious: "Keeps that fix and asks a human more often",
+};
+
 type Version = { name: string; path: string; role: string };
 type ProjectDetail = {
   id: string;
@@ -80,7 +86,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
           <select name="candidate" className="mt-1 w-full rounded border border-[var(--line)] px-2 py-1.5 text-sm text-[var(--ink)]">
             {versions.filter((item) => item.role !== "production").map((version) => (
               <option key={version.path} value={version.path}>
-                {version.name}
+                {CHANGE[version.name] || version.name}
               </option>
             ))}
           </select>
