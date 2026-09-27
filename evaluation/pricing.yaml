@@ -1,0 +1,3 @@
+# User-supplied prices, in USD per million tokens.
+# AgentGate does not fetch live prices. An unknown model reports cost as unavailable.
+models: {}

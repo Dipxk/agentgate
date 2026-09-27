@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: agentgate
+Version: 0.1.0
+Summary: CI/CD release gates for AI agents
+Requires-Python: >=3.9
+Requires-Dist: fastapi<1,>=0.115.6
+Requires-Dist: uvicorn<1,>=0.32
+Requires-Dist: pydantic<3,>=2.10
+Requires-Dist: sqlalchemy<3,>=2.0.36
+Requires-Dist: pyyaml>=6.0.2
+Requires-Dist: httpx<1,>=0.27
+Requires-Dist: typer<1,>=0.12
+Provides-Extra: postgres
+Requires-Dist: psycopg[binary]<4,>=3.1; extra == "postgres"
+Provides-Extra: dev
+Requires-Dist: pytest<9,>=8.3; extra == "dev"
+Requires-Dist: httpx<1,>=0.27; extra == "dev"

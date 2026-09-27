@@ -1,0 +1,14 @@
+.env
+.venv/
+.pydeps/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.db
+reports/
+node_modules/
+.next/
+frontend/node_modules/
+frontend/.next/
+.DS_Store
+agentgate-report.json

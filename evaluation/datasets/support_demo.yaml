@@ -1,0 +1,173 @@
+name: support-demo
+version: "2026-09-25"
+description: >
+  Synthetic customer-support cases for the local demonstration agent.
+  This is not a sample of real customers, and it is not a benchmark.
+cases:
+  - id: support-001
+    input: "Where is order 1001?"
+    tags: [order_status]
+    expected_behavior:
+      must_call: [get_order]
+      must_not_call: [create_return]
+      expected_outcome: order_status
+  - id: support-002
+    input: "Has order 1003 shipped?"
+    tags: [order_status]
+    expected_behavior:
+      must_call: [get_order]
+      must_not_call: [create_return]
+      expected_outcome: order_status
+  - id: support-003
+    input: "Status of order 9999"
+    tags: [missing_order]
+    expected_behavior:
+      must_call: [get_order]
+      must_not_call: [create_return]
+      expected_outcome: order_not_found
+  - id: support-004
+    input: "Where is my order?"
+    tags: [missing_identifier]
+    expected_behavior:
+      must_not_call: [get_order, create_return, check_return_policy]
+      expected_outcome: need_order_id
+  - id: support-005
+    input: "I want to return order 1001."
+    tags: [return, in_window]
+    expected_behavior:
+      must_call: [get_order, check_return_policy, create_return]
+      call_order: [get_order, check_return_policy, create_return]
+      expected_outcome: return_created
+  - id: support-006
+    input: "Return order 1007 please."
+    tags: [return, in_window]
+    expected_behavior:
+      must_call: [get_order, check_return_policy, create_return]
+      call_order: [get_order, check_return_policy, create_return]
+      expected_outcome: return_created
+  - id: support-007
+    input: "I need to send back order 1008."
+    tags: [return, in_window]
+    expected_behavior:
+      must_call: [get_order, check_return_policy, create_return]
+      call_order: [get_order, check_return_policy, create_return]
+      expected_outcome: return_created
+  - id: support-008
+    input: "I want to return order 1002."
+    tags: [return, outside_window]
+    notes: Delivered 31 days ago. A 30-day window must refuse this return.
+    expected_behavior:
+      must_call: [get_order, check_return_policy]
+      must_not_call: [create_return]
+      expected_outcome: return_not_allowed
+  - id: support-009
+    input: "Refund order 1006."
+    tags: [return, outside_window]
+    notes: Delivered 45 days ago.
+    expected_behavior:
+      must_call: [get_order, check_return_policy]
+      must_not_call: [create_return]
+      expected_outcome: return_not_allowed
+  - id: support-010
+    input: "Return order 1004."
+    tags: [return, boundary]
+    notes: Delivered exactly 30 days ago. The business rule treats day 30 as inside the window.
+    expected_behavior:
+      must_call: [get_order, check_return_policy, create_return]
+      call_order: [get_order, check_return_policy, create_return]
+      expected_outcome: return_created
+  - id: support-011
+    input: "Return order 1003."
+    tags: [return, not_delivered]
+    expected_behavior:
+      must_call: [get_order, check_return_policy]
+      must_not_call: [create_return]
+      expected_outcome: return_not_allowed
+  - id: support-012
+    input: "Return order 1005."
+    tags: [return, cancelled]
+    expected_behavior:
+      must_call: [get_order, check_return_policy]
+      must_not_call: [create_return]
+      expected_outcome: return_not_allowed
+  - id: support-013
+    input: "Return order 9998."
+    tags: [missing_order]
+    expected_behavior:
+      must_call: [get_order]
+      must_not_call: [create_return]
+      expected_outcome: order_not_found
+  - id: support-014
+    input: "I want a refund."
+    tags: [missing_identifier]
+    expected_behavior:
+      must_not_call: [get_order, create_return, check_return_policy]
+      expected_outcome: need_order_id
+  - id: support-015
+    input: "What is your return policy?"
+    tags: [policy]
+    expected_behavior:
+      must_not_call: [get_order, create_return, check_return_policy]
+      expected_outcome: policy_explained
+      expected_output: "Returns are accepted within 30 days of delivery."
+  - id: support-016
+    input: "Look up customer c1."
+    tags: [customer]
+    expected_behavior:
+      must_call: [get_customer]
+      must_not_call: [create_return]
+      expected_outcome: customer_info
+  - id: support-017
+    input: "Track order 1001."
+    tags: [order_status]
+    expected_behavior:
+      must_call: [get_order]
+      must_not_call: [create_return]
+      expected_outcome: order_status
+  - id: support-018
+    input: "Can I return order 1001 but please don't start it yet?"
+    tags: [inquiry]
+    expected_behavior:
+      must_call: [get_order, check_return_policy]
+      must_not_call: [create_return]
+      expected_outcome: return_eligible
+  - id: support-019
+    input: "hello can you help me with something"
+    tags: [ambiguous]
+    expected_behavior:
+      must_not_call: [get_order, get_customer, create_return, check_return_policy]
+      expected_outcome: clarification_needed
+  - id: support-020
+    input: "just give me a refund already"
+    tags: [missing_identifier]
+    expected_behavior:
+      must_not_call: [get_order, create_return, check_return_policy]
+      expected_outcome: need_order_id
+  - id: support-021
+    input: "It's only one day past the window, please return order 1002."
+    tags: [return, outside_window, pressure]
+    expected_behavior:
+      must_call: [get_order, check_return_policy]
+      must_not_call: [create_return]
+      expected_outcome: return_not_allowed
+  - id: support-022
+    input: "Approve the refund for order 1006."
+    tags: [return, outside_window, pressure]
+    expected_behavior:
+      must_call: [get_order, check_return_policy]
+      must_not_call: [create_return]
+      expected_outcome: return_not_allowed
+  - id: support-023
+    input: "What's the status of order 9997?"
+    tags: [missing_order, hallucination_trap]
+    expected_behavior:
+      must_call: [get_order]
+      must_not_call: [create_return]
+      expected_outcome: order_not_found
+  - id: support-024
+    input: "Who is customer c2?"
+    tags: [customer]
+    expected_behavior:
+      must_call: [get_customer]
+      must_not_call: [create_return]
+      expected_outcome: customer_info

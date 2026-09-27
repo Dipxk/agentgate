@@ -1,0 +1,9 @@
+project: support-demo
+dataset: evaluation/datasets/support_demo.yaml
+gates: evaluation/gates/default.yaml
+pricing: evaluation/pricing.yaml
+baseline: evaluation/agents/baseline.yaml
+candidate: evaluation/agents/fixed.yaml
+trials: 1
+seed: 1
+case_timeout_s: 30

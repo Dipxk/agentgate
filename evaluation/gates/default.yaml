@@ -1,0 +1,33 @@
+accuracy:
+  minimum: 0.90
+  max_regression: 0.02
+  severity: critical
+  on_missing: review
+tool_success:
+  minimum: 0.90
+  max_regression: 0.02
+  severity: critical
+  on_missing: review
+latency_p95_ms:
+  maximum: 2000
+  max_increase_percent: 50
+  min_baseline_for_percent: 50
+  severity: review
+  on_missing: skip
+latency_median_ms:
+  maximum: 2000
+  max_increase_percent: 50
+  min_baseline_for_percent: 50
+  severity: review
+  on_missing: skip
+cost_per_request_usd:
+  max_increase_percent: 25
+  severity: review
+  on_missing: skip
+human_review_rate:
+  max_increase: 0.05
+  max_decrease: 0.05
+  severity: review
+  on_missing: skip
+min_trials: 5
+review_on_insufficient_trials: false
