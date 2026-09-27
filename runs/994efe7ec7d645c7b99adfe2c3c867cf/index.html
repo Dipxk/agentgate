@@ -1,0 +1,358 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="/agentgate/_next/static/css/app/layout.css?v=1790472020824"" data-precedence="next_static/css/app/layout.css"/><link rel="preload" as="script" fetchPriority="low" href="/agentgate/_next/static/chunks/webpack.js?v=1790472020824""/><meta name="next-size-adjust" content=""/><title>AgentGate</title><meta name="description" content="CI/CD release gates for AI agents"/></head><body class="__variable_246ccd __variable_c29908"><div hidden=""><!--$--><!--/$--></div><div class="min-h-screen md:grid md:grid-cols-[216px_1fr]"><aside class="border-b border-[var(--line)] px-3 py-5 md:sticky md:top-0 md:h-screen md:border-b-0 md:border-r"><a class="flex items-center gap-2.5 rounded-lg px-2 py-1 hover:bg-[var(--hover)]" href="/agentgate/""><svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M3.25 15.25V5.1A1.85 1.85 0 0 1 5.1 3.25h7.8a1.85 1.85 0 0 1 1.85 1.85v10.15" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"></path><path d="M7 15.25V9.1h4v6.15" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg><span class="text-sm font-semibold tracking-tight">AgentGate</span></a><nav class="mt-6 flex gap-1 overflow-x-auto md:flex-col"><a class="rounded-lg px-2.5 py-1.5 text-sm text-[var(--muted)] hover:bg-[var(--hover)] hover:text-[var(--ink)]" href="/agentgate/"">Overview</a><a class="rounded-lg px-2.5 py-1.5 text-sm text-[var(--muted)] hover:bg-[var(--hover)] hover:text-[var(--ink)]" href="/agentgate/projects"">Projects</a><a aria-current="page" class="rounded-lg px-2.5 py-1.5 text-sm bg-[var(--surface)] font-medium shadow-[var(--shadow)]" href="/agentgate/runs"">Runs</a><a class="rounded-lg px-2.5 py-1.5 text-sm text-[var(--muted)] hover:bg-[var(--hover)] hover:text-[var(--ink)]" href="/agentgate/compare"">Compare</a><a class="rounded-lg px-2.5 py-1.5 text-sm text-[var(--muted)] hover:bg-[var(--hover)] hover:text-[var(--ink)]" href="/agentgate/github"">GitHub</a></nav></aside><main class="mx-auto w-full max-w-[1040px] px-6 py-8 md:px-10"><div class="enter"><!--$?--><template id="B:0"></template><div class="space-y-3" aria-hidden="true"><div class="h-6 w-36 rounded-lg bg-[var(--surface)]"></div><div class="grid grid-cols-2 gap-3 md:grid-cols-4"><div class="panel h-16"></div><div class="panel h-16"></div><div class="panel h-16"></div><div class="panel h-16"></div></div><div class="panel h-56"></div></div><!--/$--></div></main></div><div hidden id="S:0"><template id="P:1"></template><!--$--><!--/$--></div><div hidden id="S:1"><div><header class="mb-6"><h1 class="text-xl font-semibold tracking-tight">Evaluation</h1><p class="mt-1 max-w-3xl text-sm text-[var(--muted)]">support-demo@2026-09-25 · dataset ebae5575f8b5 · evaluator 1.0.0</p></header><section class="panel relative mb-6 overflow-hidden px-4 py-3.5"><span class="absolute inset-y-0 left-0 w-0.5 bg-[#9a6700]"></span><div class="flex flex-wrap items-center gap-3"><span class="inline-flex items-center gap-1.5 rounded-full px-2 py-0.5 text-[11px] font-semibold uppercase tracking-wide bg-[#332816] text-[#f0c36a]"><span class="h-1.5 w-1.5 rounded-full bg-current"></span>Review</span><span class="num text-xs text-[var(--muted)]">994efe7ec7d645c7b99adfe2c3c867cf</span><div class="ml-auto" action="" encType="multipart/form-data" method="POST"><input type="hidden" name="$ACTION_ID_40e62187e831719b070ac3da8f5998471ac3c550a8"/><input type="hidden" name="runId" value="994efe7ec7d645c7b99adfe2c3c867cf"/><button type="button" class="rounded-lg border border-[var(--line)] bg-[var(--bg)] px-2.5 py-1 text-xs hover:bg-[var(--hover)]">Replay run</button></div></div><ul class="mt-3 space-y-1 text-sm"><li>Human-review rate increased by 0.1250, above 0.0500.</li></ul></section><div class="mb-6 grid gap-3 md:grid-cols-2"><section class="panel p-4"><h2 class="text-xs uppercase tracking-wide text-[var(--muted)]">Production baseline</h2><div class="mt-2 text-sm"><div class="font-medium">support-baseline</div><p class="text-[var(--muted)]">1.0.0<!-- --> · <!-- -->Deterministic harness<!-- --> · <!-- -->policy</p><p class="num mt-1 text-xs text-[var(--muted)]">config <!-- -->e4a068c115a2</p><p class="mt-2">Accuracy <!-- -->95.8%<!-- --> (<!-- -->23<!-- -->/<!-- -->24<!-- --> completed)</p></div></section><section class="panel p-4"><h2 class="text-xs uppercase tracking-wide text-[var(--muted)]">Candidate</h2><div class="mt-2 text-sm"><div class="font-medium">support-cautious</div><p class="text-[var(--muted)]">1.1.2-cautious<!-- --> · <!-- -->Deterministic harness<!-- --> · <!-- -->policy</p><p class="num mt-1 text-xs text-[var(--muted)]">config <!-- -->99a7a37de469</p><p class="mt-2">Accuracy <!-- -->100.0%<!-- --> (<!-- -->24<!-- -->/<!-- -->24<!-- --> completed)</p></div></section></div><div><dl class="grid grid-cols-2 gap-3 md:grid-cols-4"><div class="panel px-3 py-2.5"><dt class="text-xs text-[var(--muted)]">Agent failures</dt><dd class="num text-lg">0</dd></div><div class="panel px-3 py-2.5"><dt class="text-xs text-[var(--muted)]">Infrastructure errors</dt><dd class="num text-lg">0</dd></div><div class="panel px-3 py-2.5"><dt class="text-xs text-[var(--muted)]">Provider errors</dt><dd class="num text-lg">0</dd></div><div class="panel px-3 py-2.5"><dt class="text-xs text-[var(--muted)]">Completed</dt><dd class="num text-lg">24</dd></div></dl></div><div class="mt-6"><div class="panel overflow-x-auto"><table class="min-w-[720px] text-sm"><thead class="text-left text-xs uppercase tracking-wide text-[var(--muted)]"><tr><th class="px-3 py-2 font-medium">Metric</th><th class="px-3 py-2 text-right font-medium">Production</th><th class="px-3 py-2 text-right font-medium">Candidate</th><th class="px-3 py-2 text-right font-medium">Change</th><th class="px-3 py-2 font-medium">Gate</th></tr></thead><tbody><tr class="border-t border-[var(--line)] align-top"><td class="px-3 py-2.5"><div class="font-medium">Behavioral accuracy</div></td><td class="num px-3 py-2.5 text-right">95.8%</td><td class="num px-3 py-2.5 text-right">100.0%</td><td class="num px-3 py-2.5 text-right">+4.2 pp</td><td class="px-3 py-2.5"><span class="inline-flex items-center gap-1.5 rounded-full px-2 py-0.5 text-[11px] font-semibold uppercase tracking-wide bg-[#143024] text-[#7ddea8]"><span class="h-1.5 w-1.5 rounded-full bg-current"></span>Pass</span></td></tr><tr class="border-t border-[var(--line)] align-top"><td class="px-3 py-2.5"><div class="font-medium">Tool-call success</div></td><td class="num px-3 py-2.5 text-right">95.8%</td><td class="num px-3 py-2.5 text-right">100.0%</td><td class="num px-3 py-2.5 text-right">+4.2 pp</td><td class="px-3 py-2.5"><span class="inline-flex items-center gap-1.5 rounded-full px-2 py-0.5 text-[11px] font-semibold uppercase tracking-wide bg-[#143024] text-[#7ddea8]"><span class="h-1.5 w-1.5 rounded-full bg-current"></span>Pass</span></td></tr><tr class="border-t border-[var(--line)] align-top"><td class="px-3 py-2.5"><div class="font-medium">Median latency</div></td><td class="num px-3 py-2.5 text-right">0.1 ms</td><td class="num px-3 py-2.5 text-right">0.1 ms</td><td class="num px-3 py-2.5 text-right">n/a</td><td class="px-3 py-2.5"><span class="inline-flex items-center gap-1.5 rounded-full px-2 py-0.5 text-[11px] font-semibold uppercase tracking-wide bg-[#143024] text-[#7ddea8]"><span class="h-1.5 w-1.5 rounded-full bg-current"></span>Pass</span></td></tr><tr class="border-t border-[var(--line)] align-top"><td class="px-3 py-2.5"><div class="font-medium">p95 latency</div></td><td class="num px-3 py-2.5 text-right">0.3 ms</td><td class="num px-3 py-2.5 text-right">0.1 ms</td><td class="num px-3 py-2.5 text-right">n/a</td><td class="px-3 py-2.5"><span class="inline-flex items-center gap-1.5 rounded-full px-2 py-0.5 text-[11px] font-semibold uppercase tracking-wide bg-[#143024] text-[#7ddea8]"><span class="h-1.5 w-1.5 rounded-full bg-current"></span>Pass</span></td></tr><tr class="border-t border-[var(--line)] align-top"><td class="px-3 py-2.5"><div class="font-medium">Cost / request</div><div class="mt-0.5 max-w-md text-xs leading-5 text-[var(--muted)]">Cost / request was not measured. It was not invented.</div></td><td class="num px-3 py-2.5 text-right">Not measured</td><td class="num px-3 py-2.5 text-right">Not measured</td><td class="num px-3 py-2.5 text-right">n/a</td><td class="px-3 py-2.5"><span class="inline-flex items-center gap-1.5 rounded-full px-2 py-0.5 text-[11px] font-semibold uppercase tracking-wide bg-[var(--hover)] text-[var(--muted)]"><span class="h-1.5 w-1.5 rounded-full bg-current"></span>n/a</span></td></tr><tr class="border-t border-[var(--line)] align-top"><td class="px-3 py-2.5"><div class="font-medium">Human-review rate</div><div class="mt-0.5 max-w-md text-xs leading-5 text-[var(--muted)]">Human-review rate increased by 0.1250, above 0.0500.</div></td><td class="num px-3 py-2.5 text-right">4.2%</td><td class="num px-3 py-2.5 text-right">16.7%</td><td class="num px-3 py-2.5 text-right">+12.5 pp</td><td class="px-3 py-2.5"><span class="inline-flex items-center gap-1.5 rounded-full px-2 py-0.5 text-[11px] font-semibold uppercase tracking-wide bg-[#332816] text-[#f0c36a]"><span class="h-1.5 w-1.5 rounded-full bg-current"></span>Review</span></td></tr></tbody></table></div></div><section class="panel mt-6 p-4 text-sm"><div class="flex items-center gap-2"><h2 class="text-sm font-semibold">Trials</h2><span class="rounded-full bg-[var(--hover)] px-2 py-0.5 text-xs text-[var(--muted)]">Insufficient trials</span></div><p class="mt-2">1<!-- --> stored, <!-- -->5<!-- --> required before the badge clears. Mean <!-- -->100.0%<!-- -->. Median <!-- -->100.0%<!-- -->. Sample variance<!-- --> <!-- -->not computed<!-- -->.</p><p class="mt-1 text-xs text-[var(--muted)]">These figures describe the observed trials. They are not a confidence interval and are not a test of statistical significance.</p></section><div class="mb-2 mt-8 flex items-center justify-between"><h2 class="text-sm font-semibold">Cases</h2><div class="flex gap-1 text-xs"><a class="rounded-full px-2.5 py-1 bg-[var(--surface)] font-medium shadow-[var(--shadow)]" href="/agentgate/runs/994efe7ec7d645c7b99adfe2c3c867cf"">All</a><a class="rounded-full px-2.5 py-1 text-[var(--muted)] hover:bg-[var(--hover)]" href="/agentgate/runs/994efe7ec7d645c7b99adfe2c3c867cf?status=failed"">Failed</a><a class="rounded-full px-2.5 py-1 text-[var(--muted)] hover:bg-[var(--hover)]" href="/agentgate/runs/994efe7ec7d645c7b99adfe2c3c867cf?status=regression"">Regressions</a><a class="rounded-full px-2.5 py-1 text-[var(--muted)] hover:bg-[var(--hover)]" href="/agentgate/runs/994efe7ec7d645c7b99adfe2c3c867cf?status=infrastructure_error"">Infrastructure</a></div></div><div class="panel overflow-x-auto"><table class="min-w-[760px] text-sm"><thead class="text-left text-xs uppercase tracking-wide text-[var(--muted)]"><tr><th class="px-3 py-2 font-medium">Case</th><th class="px-3 py-2 font-medium">Change</th><th class="px-3 py-2 font-medium">Candidate status</th><th class="px-3 py-2 font-medium">Outcome</th><th class="px-3 py-2 text-right font-medium">Latency</th><th class="px-3 py-2 text-right font-medium">Cost</th></tr></thead><tbody><tr class="border-t border-[var(--line)]"><td class="px-3 py-2"><a class="font-medium underline decoration-transparent underline-offset-2 hover:decoration-[var(--ink)]" href="/agentgate/runs/994efe7ec7d645c7b99adfe2c3c867cf/cases/support-001"">support-001</a></td><td class="px-3 py-2">unchanged</td><td class="px-3 py-2">passed</td><td class="num px-3 py-2 text-xs">order_status</td><td class="num px-3 py-2 text-right">0.1 ms</td><td class="num px-3 py-2 text-right">Not measured</td></tr><tr class="border-t border-[var(--line)]"><td class="px-3 py-2"><a class="font-medium underline decoration-transparent underline-offset-2 hover:decoration-[var(--ink)]" href="/agentgate/runs/994efe7ec7d645c7b99adfe2c3c867cf/cases/support-002"">support-002</a></td><td class="px-3 py-2">unchanged</td><td class="px-3 py-2">passed</td><td class="num px-3 py-2 text-xs">order_status</td><td class="num px-3 py-2 text-right">0.1 ms</td><td class="num px-3 py-2 text-right">Not measured</td></tr><tr class="border-t border-[var(--line)]"><td class="px-3 py-2"><a class="font-medium underline decoration-transparent underline-offset-2 hover:decoration-[var(--ink)]" href="/agentgate/runs/994efe7ec7d645c7b99adfe2c3c867cf/cases/support-003"">support-003</a></td><td class="px-3 py-2">unchanged</td><td class="px-3 py-2">passed</td><td class="num px-3 py-2 text-xs">order_not_found</td><td class="num px-3 py-2 text-right">0.1 ms</td><td class="num px-3 py-2 text-right">Not measured</td></tr><tr class="border-t border-[var(--line)]"><td class="px-3 py-2"><a class="font-medium underline decoration-transparent underline-offset-2 hover:decoration-[var(--ink)]" href="/agentgate/runs/994efe7ec7d645c7b99adfe2c3c867cf/cases/support-004"">support-004</a></td><td class="px-3 py-2">unchanged</td><td class="px-3 py-2">passed</td><td class="num px-3 py-2 text-xs">need_order_id</td><td class="num px-3 py-2 text-right">0.0 ms</td><td class="num px-3 py-2 text-right">Not measured</td></tr><tr class="border-t border-[var(--line)]"><td class="px-3 py-2"><a class="font-medium underline decoration-transparent underline-offset-2 hover:decoration-[var(--ink)]" href="/agentgate/runs/994efe7ec7d645c7b99adfe2c3c867cf/cases/support-005"">support-005</a></td><td class="px-3 py-2">unchanged</td><td class="px-3 py-2">passed</td><td class="num px-3 py-2 text-xs">return_created</td><td class="num px-3 py-2 text-right">0.1 ms</td><td class="num px-3 py-2 text-right">Not measured</td></tr><tr class="border-t border-[var(--line)]"><td class="px-3 py-2"><a class="font-medium underline decoration-transparent underline-offset-2 hover:decoration-[var(--ink)]" href="/agentgate/runs/994efe7ec7d645c7b99adfe2c3c867cf/cases/support-006"">support-006</a></td><td class="px-3 py-2">unchanged</td><td class="px-3 py-2">passed</td><td class="num px-3 py-2 text-xs">return_created</td><td class="num px-3 py-2 text-right">0.1 ms</td><td class="num px-3 py-2 text-right">Not measured</td></tr><tr class="border-t border-[var(--line)]"><td class="px-3 py-2"><a class="font-medium underline decoration-transparent underline-offset-2 hover:decoration-[var(--ink)]" href="/agentgate/runs/994efe7ec7d645c7b99adfe2c3c867cf/cases/support-007"">support-007</a></td><td class="px-3 py-2">unchanged</td><td class="px-3 py-2">passed</td><td class="num px-3 py-2 text-xs">return_created</td><td class="num px-3 py-2 text-right">0.1 ms</td><td class="num px-3 py-2 text-right">Not measured</td></tr><tr class="border-t border-[var(--line)]"><td class="px-3 py-2"><a class="font-medium underline decoration-transparent underline-offset-2 hover:decoration-[var(--ink)]" href="/agentgate/runs/994efe7ec7d645c7b99adfe2c3c867cf/cases/support-008"">support-008</a></td><td class="px-3 py-2">unchanged</td><td class="px-3 py-2">passed</td><td class="num px-3 py-2 text-xs">return_not_allowed</td><td class="num px-3 py-2 text-right">0.1 ms</td><td class="num px-3 py-2 text-right">Not measured</td></tr><tr class="border-t border-[var(--line)]"><td class="px-3 py-2"><a class="font-medium underline decoration-transparent underline-offset-2 hover:decoration-[var(--ink)]" href="/agentgate/runs/994efe7ec7d645c7b99adfe2c3c867cf/cases/support-009"">support-009</a></td><td class="px-3 py-2">unchanged</td><td class="px-3 py-2">passed</td><td class="num px-3 py-2 text-xs">return_not_allowed</td><td class="num px-3 py-2 text-right">0.1 ms</td><td class="num px-3 py-2 text-right">Not measured</td></tr><tr class="border-t border-[var(--line)]"><td class="px-3 py-2"><a class="font-medium underline decoration-transparent underline-offset-2 hover:decoration-[var(--ink)]" href="/agentgate/runs/994efe7ec7d645c7b99adfe2c3c867cf/cases/support-010"">support-010</a></td><td class="px-3 py-2">fix</td><td class="px-3 py-2">passed</td><td class="num px-3 py-2 text-xs">return_created</td><td class="num px-3 py-2 text-right">0.1 ms</td><td class="num px-3 py-2 text-right">Not measured</td></tr><tr class="border-t border-[var(--line)]"><td class="px-3 py-2"><a class="font-medium underline decoration-transparent underline-offset-2 hover:decoration-[var(--ink)]" href="/agentgate/runs/994efe7ec7d645c7b99adfe2c3c867cf/cases/support-011"">support-011</a></td><td class="px-3 py-2">unchanged</td><td class="px-3 py-2">passed</td><td class="num px-3 py-2 text-xs">return_not_allowed</td><td class="num px-3 py-2 text-right">0.1 ms</td><td class="num px-3 py-2 text-right">Not measured</td></tr><tr class="border-t border-[var(--line)]"><td class="px-3 py-2"><a class="font-medium underline decoration-transparent underline-offset-2 hover:decoration-[var(--ink)]" href="/agentgate/runs/994efe7ec7d645c7b99adfe2c3c867cf/cases/support-012"">support-012</a></td><td class="px-3 py-2">unchanged</td><td class="px-3 py-2">passed</td><td class="num px-3 py-2 text-xs">return_not_allowed</td><td class="num px-3 py-2 text-right">0.2 ms</td><td class="num px-3 py-2 text-right">Not measured</td></tr><tr class="border-t border-[var(--line)]"><td class="px-3 py-2"><a class="font-medium underline decoration-transparent underline-offset-2 hover:decoration-[var(--ink)]" href="/agentgate/runs/994efe7ec7d645c7b99adfe2c3c867cf/cases/support-013"">support-013</a></td><td class="px-3 py-2">unchanged</td><td class="px-3 py-2">passed</td><td class="num px-3 py-2 text-xs">order_not_found</td><td class="num px-3 py-2 text-right">0.1 ms</td><td class="num px-3 py-2 text-right">Not measured</td></tr><tr class="border-t border-[var(--line)]"><td class="px-3 py-2"><a class="font-medium underline decoration-transparent underline-offset-2 hover:decoration-[var(--ink)]" href="/agentgate/runs/994efe7ec7d645c7b99adfe2c3c867cf/cases/support-014"">support-014</a></td><td class="px-3 py-2">unchanged</td><td class="px-3 py-2">passed</td><td class="num px-3 py-2 text-xs">need_order_id</td><td class="num px-3 py-2 text-right">0.0 ms</td><td class="num px-3 py-2 text-right">Not measured</td></tr><tr class="border-t border-[var(--line)]"><td class="px-3 py-2"><a class="font-medium underline decoration-transparent underline-offset-2 hover:decoration-[var(--ink)]" href="/agentgate/runs/994efe7ec7d645c7b99adfe2c3c867cf/cases/support-015"">support-015</a></td><td class="px-3 py-2">unchanged</td><td class="px-3 py-2">passed</td><td class="num px-3 py-2 text-xs">policy_explained</td><td class="num px-3 py-2 text-right">0.0 ms</td><td class="num px-3 py-2 text-right">Not measured</td></tr><tr class="border-t border-[var(--line)]"><td class="px-3 py-2"><a class="font-medium underline decoration-transparent underline-offset-2 hover:decoration-[var(--ink)]" href="/agentgate/runs/994efe7ec7d645c7b99adfe2c3c867cf/cases/support-016"">support-016</a></td><td class="px-3 py-2">unchanged</td><td class="px-3 py-2">passed</td><td class="num px-3 py-2 text-xs">customer_info</td><td class="num px-3 py-2 text-right">0.1 ms</td><td class="num px-3 py-2 text-right">Not measured</td></tr><tr class="border-t border-[var(--line)]"><td class="px-3 py-2"><a class="font-medium underline decoration-transparent underline-offset-2 hover:decoration-[var(--ink)]" href="/agentgate/runs/994efe7ec7d645c7b99adfe2c3c867cf/cases/support-017"">support-017</a></td><td class="px-3 py-2">unchanged</td><td class="px-3 py-2">passed</td><td class="num px-3 py-2 text-xs">order_status</td><td class="num px-3 py-2 text-right">0.1 ms</td><td class="num px-3 py-2 text-right">Not measured</td></tr><tr class="border-t border-[var(--line)]"><td class="px-3 py-2"><a class="font-medium underline decoration-transparent underline-offset-2 hover:decoration-[var(--ink)]" href="/agentgate/runs/994efe7ec7d645c7b99adfe2c3c867cf/cases/support-018"">support-018</a></td><td class="px-3 py-2">unchanged</td><td class="px-3 py-2">passed</td><td class="num px-3 py-2 text-xs">return_eligible</td><td class="num px-3 py-2 text-right">0.1 ms</td><td class="num px-3 py-2 text-right">Not measured</td></tr><tr class="border-t border-[var(--line)]"><td class="px-3 py-2"><a class="font-medium underline decoration-transparent underline-offset-2 hover:decoration-[var(--ink)]" href="/agentgate/runs/994efe7ec7d645c7b99adfe2c3c867cf/cases/support-019"">support-019</a></td><td class="px-3 py-2">unchanged</td><td class="px-3 py-2">passed</td><td class="num px-3 py-2 text-xs">clarification_needed</td><td class="num px-3 py-2 text-right">0.1 ms</td><td class="num px-3 py-2 text-right">Not measured</td></tr><tr class="border-t border-[var(--line)]"><td class="px-3 py-2"><a class="font-medium underline decoration-transparent underline-offset-2 hover:decoration-[var(--ink)]" href="/agentgate/runs/994efe7ec7d645c7b99adfe2c3c867cf/cases/support-020"">support-020</a></td><td class="px-3 py-2">unchanged</td><td class="px-3 py-2">passed</td><td class="num px-3 py-2 text-xs">need_order_id</td><td class="num px-3 py-2 text-right">0.0 ms</td><td class="num px-3 py-2 text-right">Not measured</td></tr><tr class="border-t border-[var(--line)]"><td class="px-3 py-2"><a class="font-medium underline decoration-transparent underline-offset-2 hover:decoration-[var(--ink)]" href="/agentgate/runs/994efe7ec7d645c7b99adfe2c3c867cf/cases/support-021"">support-021</a></td><td class="px-3 py-2">unchanged</td><td class="px-3 py-2">passed</td><td class="num px-3 py-2 text-xs">return_not_allowed</td><td class="num px-3 py-2 text-right">0.1 ms</td><td class="num px-3 py-2 text-right">Not measured</td></tr><tr class="border-t border-[var(--line)]"><td class="px-3 py-2"><a class="font-medium underline decoration-transparent underline-offset-2 hover:decoration-[var(--ink)]" href="/agentgate/runs/994efe7ec7d645c7b99adfe2c3c867cf/cases/support-022"">support-022</a></td><td class="px-3 py-2">unchanged</td><td class="px-3 py-2">passed</td><td class="num px-3 py-2 text-xs">return_not_allowed</td><td class="num px-3 py-2 text-right">0.1 ms</td><td class="num px-3 py-2 text-right">Not measured</td></tr><tr class="border-t border-[var(--line)]"><td class="px-3 py-2"><a class="font-medium underline decoration-transparent underline-offset-2 hover:decoration-[var(--ink)]" href="/agentgate/runs/994efe7ec7d645c7b99adfe2c3c867cf/cases/support-023"">support-023</a></td><td class="px-3 py-2">unchanged</td><td class="px-3 py-2">passed</td><td class="num px-3 py-2 text-xs">order_not_found</td><td class="num px-3 py-2 text-right">0.1 ms</td><td class="num px-3 py-2 text-right">Not measured</td></tr><tr class="border-t border-[var(--line)]"><td class="px-3 py-2"><a class="font-medium underline decoration-transparent underline-offset-2 hover:decoration-[var(--ink)]" href="/agentgate/runs/994efe7ec7d645c7b99adfe2c3c867cf/cases/support-024"">support-024</a></td><td class="px-3 py-2">unchanged</td><td class="px-3 py-2">passed</td><td class="num px-3 py-2 text-xs">customer_info</td><td class="num px-3 py-2 text-right">0.0 ms</td><td class="num px-3 py-2 text-right">Not measured</td></tr></tbody></table></div><h2 class="mb-2 mt-8 text-sm font-semibold">Log</h2><pre class="panel max-h-80 overflow-auto p-3 text-xs leading-5">2026-09-27T01:06:40.487795+00:00  info  evaluation_start
+2026-09-27T01:06:40.488137+00:00  info  case_start  support-001
+2026-09-27T01:06:40.489417+00:00  info  tool_call  support-001
+2026-09-27T01:06:40.489492+00:00  info  evaluator_result  support-001  skip
+2026-09-27T01:06:40.489494+00:00  info  evaluator_result  support-001  pass
+2026-09-27T01:06:40.489495+00:00  info  evaluator_result  support-001  skip
+2026-09-27T01:06:40.489497+00:00  info  evaluator_result  support-001  skip
+2026-09-27T01:06:40.489498+00:00  info  case_completion  support-001  passed
+2026-09-27T01:06:40.489534+00:00  info  case_start  support-001
+2026-09-27T01:06:40.489626+00:00  info  tool_call  support-001
+2026-09-27T01:06:40.489637+00:00  info  evaluator_result  support-001  skip
+2026-09-27T01:06:40.489639+00:00  info  evaluator_result  support-001  pass
+2026-09-27T01:06:40.489640+00:00  info  evaluator_result  support-001  skip
+2026-09-27T01:06:40.489641+00:00  info  evaluator_result  support-001  skip
+2026-09-27T01:06:40.489642+00:00  info  case_completion  support-001  passed
+2026-09-27T01:06:40.489650+00:00  info  case_start  support-002
+2026-09-27T01:06:40.489729+00:00  info  tool_call  support-002
+2026-09-27T01:06:40.489738+00:00  info  evaluator_result  support-002  skip
+2026-09-27T01:06:40.489740+00:00  info  evaluator_result  support-002  pass
+2026-09-27T01:06:40.489741+00:00  info  evaluator_result  support-002  skip
+2026-09-27T01:06:40.489742+00:00  info  evaluator_result  support-002  skip
+2026-09-27T01:06:40.489743+00:00  info  case_completion  support-002  passed
+2026-09-27T01:06:40.489750+00:00  info  case_start  support-002
+2026-09-27T01:06:40.489816+00:00  info  tool_call  support-002
+2026-09-27T01:06:40.489827+00:00  info  evaluator_result  support-002  skip
+2026-09-27T01:06:40.489829+00:00  info  evaluator_result  support-002  pass
+2026-09-27T01:06:40.489830+00:00  info  evaluator_result  support-002  skip
+2026-09-27T01:06:40.489831+00:00  info  evaluator_result  support-002  skip
+2026-09-27T01:06:40.489832+00:00  info  case_completion  support-002  passed
+2026-09-27T01:06:40.489838+00:00  info  case_start  support-003
+2026-09-27T01:06:40.489899+00:00  info  tool_call  support-003
+2026-09-27T01:06:40.489909+00:00  info  evaluator_result  support-003  skip
+2026-09-27T01:06:40.489911+00:00  info  evaluator_result  support-003  pass
+2026-09-27T01:06:40.489912+00:00  info  evaluator_result  support-003  skip
+2026-09-27T01:06:40.489913+00:00  info  evaluator_result  support-003  skip
+2026-09-27T01:06:40.489914+00:00  info  case_completion  support-003  passed
+2026-09-27T01:06:40.489920+00:00  info  case_start  support-003
+2026-09-27T01:06:40.489976+00:00  info  tool_call  support-003
+2026-09-27T01:06:40.489986+00:00  info  evaluator_result  support-003  skip
+2026-09-27T01:06:40.489987+00:00  info  evaluator_result  support-003  pass
+2026-09-27T01:06:40.489988+00:00  info  evaluator_result  support-003  skip
+2026-09-27T01:06:40.489990+00:00  info  evaluator_result  support-003  skip
+2026-09-27T01:06:40.489991+00:00  info  case_completion  support-003  passed
+2026-09-27T01:06:40.489997+00:00  info  case_start  support-004
+2026-09-27T01:06:40.490056+00:00  info  evaluator_result  support-004  skip
+2026-09-27T01:06:40.490058+00:00  info  evaluator_result  support-004  pass
+2026-09-27T01:06:40.490059+00:00  info  evaluator_result  support-004  skip
+2026-09-27T01:06:40.490060+00:00  info  evaluator_result  support-004  skip
+2026-09-27T01:06:40.490061+00:00  info  case_completion  support-004  passed
+2026-09-27T01:06:40.490069+00:00  info  case_start  support-004
+2026-09-27T01:06:40.490125+00:00  info  evaluator_result  support-004  skip
+2026-09-27T01:06:40.490128+00:00  info  evaluator_result  support-004  pass
+2026-09-27T01:06:40.490129+00:00  info  evaluator_result  support-004  skip
+2026-09-27T01:06:40.490130+00:00  info  evaluator_result  support-004  skip
+2026-09-27T01:06:40.490131+00:00  info  case_completion  support-004  passed
+2026-09-27T01:06:40.490137+00:00  info  case_start  support-005
+2026-09-27T01:06:40.490217+00:00  info  tool_call  support-005
+2026-09-27T01:06:40.490220+00:00  info  tool_call  support-005
+2026-09-27T01:06:40.490221+00:00  info  tool_call  support-005
+2026-09-27T01:06:40.490231+00:00  info  evaluator_result  support-005  skip
+2026-09-27T01:06:40.490232+00:00  info  evaluator_result  support-005  pass
+2026-09-27T01:06:40.490233+00:00  info  evaluator_result  support-005  skip
+2026-09-27T01:06:40.490234+00:00  info  evaluator_result  support-005  skip
+2026-09-27T01:06:40.490235+00:00  info  case_completion  support-005  passed
+2026-09-27T01:06:40.490241+00:00  info  case_start  support-005
+2026-09-27T01:06:40.490307+00:00  info  tool_call  support-005
+2026-09-27T01:06:40.490309+00:00  info  tool_call  support-005
+2026-09-27T01:06:40.490311+00:00  info  tool_call  support-005
+2026-09-27T01:06:40.490320+00:00  info  evaluator_result  support-005  skip
+2026-09-27T01:06:40.490322+00:00  info  evaluator_result  support-005  pass
+2026-09-27T01:06:40.490323+00:00  info  evaluator_result  support-005  skip
+2026-09-27T01:06:40.490324+00:00  info  evaluator_result  support-005  skip
+2026-09-27T01:06:40.490325+00:00  info  case_completion  support-005  passed
+2026-09-27T01:06:40.490334+00:00  info  case_start  support-006
+2026-09-27T01:06:40.490399+00:00  info  tool_call  support-006
+2026-09-27T01:06:40.490400+00:00  info  tool_call  support-006
+2026-09-27T01:06:40.490402+00:00  info  tool_call  support-006
+2026-09-27T01:06:40.490410+00:00  info  evaluator_result  support-006  skip
+2026-09-27T01:06:40.490411+00:00  info  evaluator_result  support-006  pass
+2026-09-27T01:06:40.490412+00:00  info  evaluator_result  support-006  skip
+2026-09-27T01:06:40.490414+00:00  info  evaluator_result  support-006  skip
+2026-09-27T01:06:40.490415+00:00  info  case_completion  support-006  passed
+2026-09-27T01:06:40.490420+00:00  info  case_start  support-006
+2026-09-27T01:06:40.490482+00:00  info  tool_call  support-006
+2026-09-27T01:06:40.490484+00:00  info  tool_call  support-006
+2026-09-27T01:06:40.490485+00:00  info  tool_call  support-006
+2026-09-27T01:06:40.490493+00:00  info  evaluator_result  support-006  skip
+2026-09-27T01:06:40.490494+00:00  info  evaluator_result  support-006  pass
+2026-09-27T01:06:40.490495+00:00  info  evaluator_result  support-006  skip
+2026-09-27T01:06:40.490496+00:00  info  evaluator_result  support-006  skip
+2026-09-27T01:06:40.490497+00:00  info  case_completion  support-006  passed
+2026-09-27T01:06:40.490507+00:00  info  case_start  support-007
+2026-09-27T01:06:40.490567+00:00  info  tool_call  support-007
+2026-09-27T01:06:40.490569+00:00  info  tool_call  support-007
+2026-09-27T01:06:40.490570+00:00  info  tool_call  support-007
+2026-09-27T01:06:40.490578+00:00  info  evaluator_result  support-007  skip
+2026-09-27T01:06:40.490579+00:00  info  evaluator_result  support-007  pass
+2026-09-27T01:06:40.490580+00:00  info  evaluator_result  support-007  skip
+2026-09-27T01:06:40.490581+00:00  info  evaluator_result  support-007  skip
+2026-09-27T01:06:40.490582+00:00  info  case_completion  support-007  passed
+2026-09-27T01:06:40.490593+00:00  info  case_start  support-007
+2026-09-27T01:06:40.490648+00:00  info  tool_call  support-007
+2026-09-27T01:06:40.490650+00:00  info  tool_call  support-007
+2026-09-27T01:06:40.490651+00:00  info  tool_call  support-007
+2026-09-27T01:06:40.490658+00:00  info  evaluator_result  support-007  skip
+2026-09-27T01:06:40.490664+00:00  info  evaluator_result  support-007  pass
+2026-09-27T01:06:40.490665+00:00  info  evaluator_result  support-007  skip
+2026-09-27T01:06:40.490666+00:00  info  evaluator_result  support-007  skip
+2026-09-27T01:06:40.490667+00:00  info  case_completion  support-007  passed
+2026-09-27T01:06:40.490673+00:00  info  case_start  support-008
+2026-09-27T01:06:40.490724+00:00  info  tool_call  support-008
+2026-09-27T01:06:40.490725+00:00  info  tool_call  support-008
+2026-09-27T01:06:40.490732+00:00  info  evaluator_result  support-008  skip
+2026-09-27T01:06:40.490734+00:00  info  evaluator_result  support-008  pass
+2026-09-27T01:06:40.490735+00:00  info  evaluator_result  support-008  skip
+2026-09-27T01:06:40.490736+00:00  info  evaluator_result  support-008  skip
+2026-09-27T01:06:40.490737+00:00  info  case_completion  support-008  passed
+2026-09-27T01:06:40.490742+00:00  info  case_start  support-008
+2026-09-27T01:06:40.490839+00:00  info  tool_call  support-008
+2026-09-27T01:06:40.490841+00:00  info  tool_call  support-008
+2026-09-27T01:06:40.490848+00:00  info  evaluator_result  support-008  skip
+2026-09-27T01:06:40.490849+00:00  info  evaluator_result  support-008  pass
+2026-09-27T01:06:40.490851+00:00  info  evaluator_result  support-008  skip
+2026-09-27T01:06:40.490852+00:00  info  evaluator_result  support-008  skip
+2026-09-27T01:06:40.490853+00:00  info  case_completion  support-008  passed
+2026-09-27T01:06:40.490858+00:00  info  case_start  support-009
+2026-09-27T01:06:40.490910+00:00  info  tool_call  support-009
+2026-09-27T01:06:40.490912+00:00  info  tool_call  support-009
+2026-09-27T01:06:40.490919+00:00  info  evaluator_result  support-009  skip
+2026-09-27T01:06:40.490920+00:00  info  evaluator_result  support-009  pass
+2026-09-27T01:06:40.490921+00:00  info  evaluator_result  support-009  skip
+2026-09-27T01:06:40.490923+00:00  info  evaluator_result  support-009  skip
+2026-09-27T01:06:40.490924+00:00  info  case_completion  support-009  passed
+2026-09-27T01:06:40.490929+00:00  info  case_start  support-009
+2026-09-27T01:06:40.490982+00:00  info  tool_call  support-009
+2026-09-27T01:06:40.490984+00:00  info  tool_call  support-009
+2026-09-27T01:06:40.490991+00:00  info  evaluator_result  support-009  skip
+2026-09-27T01:06:40.490992+00:00  info  evaluator_result  support-009  pass
+2026-09-27T01:06:40.490993+00:00  info  evaluator_result  support-009  skip
+2026-09-27T01:06:40.490994+00:00  info  evaluator_result  support-009  skip
+2026-09-27T01:06:40.490995+00:00  info  case_completion  support-009  passed
+2026-09-27T01:06:40.491000+00:00  info  case_start  support-010
+2026-09-27T01:06:40.491055+00:00  info  tool_call  support-010
+2026-09-27T01:06:40.491057+00:00  info  tool_call  support-010
+2026-09-27T01:06:40.491068+00:00  info  evaluator_result  support-010  skip
+2026-09-27T01:06:40.491070+00:00  info  evaluator_result  support-010  fail
+2026-09-27T01:06:40.491071+00:00  info  evaluator_result  support-010  skip
+2026-09-27T01:06:40.491072+00:00  info  evaluator_result  support-010  skip
+2026-09-27T01:06:40.491073+00:00  info  case_completion  support-010  failed
+2026-09-27T01:06:40.491078+00:00  info  case_start  support-010
+2026-09-27T01:06:40.491135+00:00  info  tool_call  support-010
+2026-09-27T01:06:40.491136+00:00  info  tool_call  support-010
+2026-09-27T01:06:40.491138+00:00  info  tool_call  support-010
+2026-09-27T01:06:40.491145+00:00  info  evaluator_result  support-010  skip
+2026-09-27T01:06:40.491146+00:00  info  evaluator_result  support-010  pass
+2026-09-27T01:06:40.491148+00:00  info  evaluator_result  support-010  skip
+2026-09-27T01:06:40.491149+00:00  info  evaluator_result  support-010  skip
+2026-09-27T01:06:40.491150+00:00  info  case_completion  support-010  passed
+2026-09-27T01:06:40.491155+00:00  info  case_start  support-011
+2026-09-27T01:06:40.491246+00:00  info  tool_call  support-011
+2026-09-27T01:06:40.491248+00:00  info  tool_call  support-011
+2026-09-27T01:06:40.491257+00:00  info  evaluator_result  support-011  skip
+2026-09-27T01:06:40.491259+00:00  info  evaluator_result  support-011  pass
+2026-09-27T01:06:40.491260+00:00  info  evaluator_result  support-011  skip
+2026-09-27T01:06:40.491261+00:00  info  evaluator_result  support-011  skip
+2026-09-27T01:06:40.491262+00:00  info  case_completion  support-011  passed
+2026-09-27T01:06:40.491275+00:00  info  case_start  support-011
+2026-09-27T01:06:40.491347+00:00  info  tool_call  support-011
+2026-09-27T01:06:40.491352+00:00  info  tool_call  support-011
+2026-09-27T01:06:40.491363+00:00  info  evaluator_result  support-011  skip
+2026-09-27T01:06:40.491364+00:00  info  evaluator_result  support-011  pass
+2026-09-27T01:06:40.491366+00:00  info  evaluator_result  support-011  skip
+2026-09-27T01:06:40.491367+00:00  info  evaluator_result  support-011  skip
+2026-09-27T01:06:40.491369+00:00  info  case_completion  support-011  passed
+2026-09-27T01:06:40.491377+00:00  info  case_start  support-012
+2026-09-27T01:06:40.491455+00:00  info  tool_call  support-012
+2026-09-27T01:06:40.491460+00:00  info  tool_call  support-012
+2026-09-27T01:06:40.491473+00:00  info  evaluator_result  support-012  skip
+2026-09-27T01:06:40.491475+00:00  info  evaluator_result  support-012  pass
+2026-09-27T01:06:40.491476+00:00  info  evaluator_result  support-012  skip
+2026-09-27T01:06:40.491477+00:00  info  evaluator_result  support-012  skip
+2026-09-27T01:06:40.491478+00:00  info  case_completion  support-012  passed
+2026-09-27T01:06:40.491494+00:00  info  case_start  support-012
+2026-09-27T01:06:40.491706+00:00  info  tool_call  support-012
+2026-09-27T01:06:40.491717+00:00  info  tool_call  support-012
+2026-09-27T01:06:40.491741+00:00  info  evaluator_result  support-012  skip
+2026-09-27T01:06:40.491744+00:00  info  evaluator_result  support-012  pass
+2026-09-27T01:06:40.491745+00:00  info  evaluator_result  support-012  skip
+2026-09-27T01:06:40.491761+00:00  info  evaluator_result  support-012  skip
+2026-09-27T01:06:40.491763+00:00  info  case_completion  support-012  passed
+2026-09-27T01:06:40.491770+00:00  info  case_start  support-013
+2026-09-27T01:06:40.491941+00:00  info  tool_call  support-013
+2026-09-27T01:06:40.491950+00:00  info  evaluator_result  support-013  skip
+2026-09-27T01:06:40.491951+00:00  info  evaluator_result  support-013  pass
+2026-09-27T01:06:40.491952+00:00  info  evaluator_result  support-013  skip
+2026-09-27T01:06:40.491967+00:00  info  evaluator_result  support-013  skip
+2026-09-27T01:06:40.491971+00:00  info  case_completion  support-013  passed
+2026-09-27T01:06:40.491994+00:00  info  case_start  support-013
+2026-09-27T01:06:40.492144+00:00  info  tool_call  support-013
+2026-09-27T01:06:40.492154+00:00  info  evaluator_result  support-013  skip
+2026-09-27T01:06:40.492155+00:00  info  evaluator_result  support-013  pass
+2026-09-27T01:06:40.492157+00:00  info  evaluator_result  support-013  skip
+2026-09-27T01:06:40.492158+00:00  info  evaluator_result  support-013  skip
+2026-09-27T01:06:40.492160+00:00  info  case_completion  support-013  passed
+2026-09-27T01:06:40.492166+00:00  info  case_start  support-014
+2026-09-27T01:06:40.492231+00:00  info  evaluator_result  support-014  skip
+2026-09-27T01:06:40.492232+00:00  info  evaluator_result  support-014  pass
+2026-09-27T01:06:40.492233+00:00  info  evaluator_result  support-014  skip
+2026-09-27T01:06:40.492235+00:00  info  evaluator_result  support-014  skip
+2026-09-27T01:06:40.492236+00:00  info  case_completion  support-014  passed
+2026-09-27T01:06:40.492241+00:00  info  case_start  support-014
+2026-09-27T01:06:40.492312+00:00  info  evaluator_result  support-014  skip
+2026-09-27T01:06:40.492315+00:00  info  evaluator_result  support-014  pass
+2026-09-27T01:06:40.492316+00:00  info  evaluator_result  support-014  skip
+2026-09-27T01:06:40.492317+00:00  info  evaluator_result  support-014  skip
+2026-09-27T01:06:40.492318+00:00  info  case_completion  support-014  passed
+2026-09-27T01:06:40.492325+00:00  info  case_start  support-015
+2026-09-27T01:06:40.492407+00:00  info  evaluator_result  support-015  pass
+2026-09-27T01:06:40.492408+00:00  info  evaluator_result  support-015  pass
+2026-09-27T01:06:40.492410+00:00  info  evaluator_result  support-015  skip
+2026-09-27T01:06:40.492411+00:00  info  evaluator_result  support-015  skip
+2026-09-27T01:06:40.492412+00:00  info  case_completion  support-015  passed
+2026-09-27T01:06:40.492432+00:00  info  case_start  support-015
+2026-09-27T01:06:40.492493+00:00  info  evaluator_result  support-015  pass
+2026-09-27T01:06:40.492495+00:00  info  evaluator_result  support-015  pass
+2026-09-27T01:06:40.492497+00:00  info  evaluator_result  support-015  skip
+2026-09-27T01:06:40.492498+00:00  info  evaluator_result  support-015  skip
+2026-09-27T01:06:40.492499+00:00  info  case_completion  support-015  passed
+2026-09-27T01:06:40.492505+00:00  info  case_start  support-016
+2026-09-27T01:06:40.492798+00:00  info  tool_call  support-016
+2026-09-27T01:06:40.492806+00:00  info  evaluator_result  support-016  skip
+2026-09-27T01:06:40.492807+00:00  info  evaluator_result  support-016  pass
+2026-09-27T01:06:40.492808+00:00  info  evaluator_result  support-016  skip
+2026-09-27T01:06:40.492814+00:00  info  evaluator_result  support-016  skip
+2026-09-27T01:06:40.492816+00:00  info  case_completion  support-016  passed
+2026-09-27T01:06:40.492828+00:00  info  case_start  support-016
+2026-09-27T01:06:40.492884+00:00  info  tool_call  support-016
+2026-09-27T01:06:40.492895+00:00  info  evaluator_result  support-016  skip
+2026-09-27T01:06:40.492896+00:00  info  evaluator_result  support-016  pass
+2026-09-27T01:06:40.492897+00:00  info  evaluator_result  support-016  skip
+2026-09-27T01:06:40.492898+00:00  info  evaluator_result  support-016  skip
+2026-09-27T01:06:40.492900+00:00  info  case_completion  support-016  passed
+2026-09-27T01:06:40.492907+00:00  info  case_start  support-017
+2026-09-27T01:06:40.492969+00:00  info  tool_call  support-017
+2026-09-27T01:06:40.492983+00:00  info  evaluator_result  support-017  skip
+2026-09-27T01:06:40.492984+00:00  info  evaluator_result  support-017  pass
+2026-09-27T01:06:40.492985+00:00  info  evaluator_result  support-017  skip
+2026-09-27T01:06:40.492986+00:00  info  evaluator_result  support-017  skip
+2026-09-27T01:06:40.492993+00:00  info  case_completion  support-017  passed
+2026-09-27T01:06:40.493000+00:00  info  case_start  support-017
+2026-09-27T01:06:40.493056+00:00  info  tool_call  support-017
+2026-09-27T01:06:40.493064+00:00  info  evaluator_result  support-017  skip
+2026-09-27T01:06:40.493065+00:00  info  evaluator_result  support-017  pass
+2026-09-27T01:06:40.493066+00:00  info  evaluator_result  support-017  skip
+2026-09-27T01:06:40.493073+00:00  info  evaluator_result  support-017  skip
+2026-09-27T01:06:40.493075+00:00  info  case_completion  support-017  passed
+2026-09-27T01:06:40.493080+00:00  info  case_start  support-018
+2026-09-27T01:06:40.493148+00:00  info  tool_call  support-018
+2026-09-27T01:06:40.493150+00:00  info  tool_call  support-018
+2026-09-27T01:06:40.493158+00:00  info  evaluator_result  support-018  skip
+2026-09-27T01:06:40.493159+00:00  info  evaluator_result  support-018  pass
+2026-09-27T01:06:40.493160+00:00  info  evaluator_result  support-018  skip
+2026-09-27T01:06:40.493161+00:00  info  evaluator_result  support-018  skip
+2026-09-27T01:06:40.493162+00:00  info  case_completion  support-018  passed
+2026-09-27T01:06:40.493168+00:00  info  case_start  support-018
+2026-09-27T01:06:40.493229+00:00  info  tool_call  support-018
+2026-09-27T01:06:40.493231+00:00  info  tool_call  support-018
+2026-09-27T01:06:40.493239+00:00  info  evaluator_result  support-018  skip
+2026-09-27T01:06:40.493240+00:00  info  evaluator_result  support-018  pass
+2026-09-27T01:06:40.493241+00:00  info  evaluator_result  support-018  skip
+2026-09-27T01:06:40.493242+00:00  info  evaluator_result  support-018  skip
+2026-09-27T01:06:40.493243+00:00  info  case_completion  support-018  passed
+2026-09-27T01:06:40.493249+00:00  info  case_start  support-019
+2026-09-27T01:06:40.493311+00:00  info  evaluator_result  support-019  skip
+2026-09-27T01:06:40.493312+00:00  info  evaluator_result  support-019  pass
+2026-09-27T01:06:40.493313+00:00  info  evaluator_result  support-019  skip
+2026-09-27T01:06:40.493314+00:00  info  evaluator_result  support-019  skip
+2026-09-27T01:06:40.493315+00:00  info  case_completion  support-019  passed
+2026-09-27T01:06:40.493323+00:00  info  case_start  support-019
+2026-09-27T01:06:40.493417+00:00  info  evaluator_result  support-019  skip
+2026-09-27T01:06:40.493418+00:00  info  evaluator_result  support-019  pass
+2026-09-27T01:06:40.493419+00:00  info  evaluator_result  support-019  skip
+2026-09-27T01:06:40.493420+00:00  info  evaluator_result  support-019  skip
+2026-09-27T01:06:40.493422+00:00  info  case_completion  support-019  passed
+2026-09-27T01:06:40.493427+00:00  info  case_start  support-020
+2026-09-27T01:06:40.493480+00:00  info  evaluator_result  support-020  skip
+2026-09-27T01:06:40.493481+00:00  info  evaluator_result  support-020  pass
+2026-09-27T01:06:40.493482+00:00  info  evaluator_result  support-020  skip
+2026-09-27T01:06:40.493483+00:00  info  evaluator_result  support-020  skip
+2026-09-27T01:06:40.493484+00:00  info  case_completion  support-020  passed
+2026-09-27T01:06:40.493489+00:00  info  case_start  support-020
+2026-09-27T01:06:40.493540+00:00  info  evaluator_result  support-020  skip
+2026-09-27T01:06:40.493542+00:00  info  evaluator_result  support-020  pass
+2026-09-27T01:06:40.493543+00:00  info  evaluator_result  support-020  skip
+2026-09-27T01:06:40.493544+00:00  info  evaluator_result  support-020  skip
+2026-09-27T01:06:40.493545+00:00  info  case_completion  support-020  passed
+2026-09-27T01:06:40.493549+00:00  info  case_start  support-021
+2026-09-27T01:06:40.493603+00:00  info  tool_call  support-021
+2026-09-27T01:06:40.493604+00:00  info  tool_call  support-021
+2026-09-27T01:06:40.493611+00:00  info  evaluator_result  support-021  skip
+2026-09-27T01:06:40.493613+00:00  info  evaluator_result  support-021  pass
+2026-09-27T01:06:40.493614+00:00  info  evaluator_result  support-021  skip
+2026-09-27T01:06:40.493615+00:00  info  evaluator_result  support-021  skip
+2026-09-27T01:06:40.493616+00:00  info  case_completion  support-021  passed
+2026-09-27T01:06:40.493624+00:00  info  case_start  support-021
+2026-09-27T01:06:40.493679+00:00  info  tool_call  support-021
+2026-09-27T01:06:40.493681+00:00  info  tool_call  support-021
+2026-09-27T01:06:40.493687+00:00  info  evaluator_result  support-021  skip
+2026-09-27T01:06:40.493688+00:00  info  evaluator_result  support-021  pass
+2026-09-27T01:06:40.493690+00:00  info  evaluator_result  support-021  skip
+2026-09-27T01:06:40.493691+00:00  info  evaluator_result  support-021  skip
+2026-09-27T01:06:40.493693+00:00  info  case_completion  support-021  passed
+2026-09-27T01:06:40.493698+00:00  info  case_start  support-022
+2026-09-27T01:06:40.493753+00:00  info  tool_call  support-022
+2026-09-27T01:06:40.493754+00:00  info  tool_call  support-022
+2026-09-27T01:06:40.493761+00:00  info  evaluator_result  support-022  skip
+2026-09-27T01:06:40.493762+00:00  info  evaluator_result  support-022  pass
+2026-09-27T01:06:40.493764+00:00  info  evaluator_result  support-022  skip
+2026-09-27T01:06:40.493765+00:00  info  evaluator_result  support-022  skip
+2026-09-27T01:06:40.493766+00:00  info  case_completion  support-022  passed
+2026-09-27T01:06:40.493770+00:00  info  case_start  support-022
+2026-09-27T01:06:40.493823+00:00  info  tool_call  support-022
+2026-09-27T01:06:40.493825+00:00  info  tool_call  support-022
+2026-09-27T01:06:40.493831+00:00  info  evaluator_result  support-022  skip
+2026-09-27T01:06:40.493832+00:00  info  evaluator_result  support-022  pass
+2026-09-27T01:06:40.493833+00:00  info  evaluator_result  support-022  skip
+2026-09-27T01:06:40.493835+00:00  info  evaluator_result  support-022  skip
+2026-09-27T01:06:40.493836+00:00  info  case_completion  support-022  passed
+2026-09-27T01:06:40.493840+00:00  info  case_start  support-023
+2026-09-27T01:06:40.493887+00:00  info  tool_call  support-023
+2026-09-27T01:06:40.493894+00:00  info  evaluator_result  support-023  skip
+2026-09-27T01:06:40.493895+00:00  info  evaluator_result  support-023  pass
+2026-09-27T01:06:40.493896+00:00  info  evaluator_result  support-023  skip
+2026-09-27T01:06:40.493898+00:00  info  evaluator_result  support-023  skip
+2026-09-27T01:06:40.493899+00:00  info  case_completion  support-023  passed
+2026-09-27T01:06:40.493905+00:00  info  case_start  support-023
+2026-09-27T01:06:40.493958+00:00  info  tool_call  support-023
+2026-09-27T01:06:40.493964+00:00  info  evaluator_result  support-023  skip
+2026-09-27T01:06:40.493966+00:00  info  evaluator_result  support-023  pass
+2026-09-27T01:06:40.493967+00:00  info  evaluator_result  support-023  skip
+2026-09-27T01:06:40.493968+00:00  info  evaluator_result  support-023  skip
+2026-09-27T01:06:40.493969+00:00  info  case_completion  support-023  passed
+2026-09-27T01:06:40.493973+00:00  info  case_start  support-024
+2026-09-27T01:06:40.494019+00:00  info  tool_call  support-024
+2026-09-27T01:06:40.494025+00:00  info  evaluator_result  support-024  skip
+2026-09-27T01:06:40.494027+00:00  info  evaluator_result  support-024  pass
+2026-09-27T01:06:40.494028+00:00  info  evaluator_result  support-024  skip
+2026-09-27T01:06:40.494029+00:00  info  evaluator_result  support-024  skip
+2026-09-27T01:06:40.494030+00:00  info  case_completion  support-024  passed
+2026-09-27T01:06:40.494035+00:00  info  case_start  support-024
+2026-09-27T01:06:40.494080+00:00  info  tool_call  support-024
+2026-09-27T01:06:40.494087+00:00  info  evaluator_result  support-024  skip
+2026-09-27T01:06:40.494088+00:00  info  evaluator_result  support-024  pass
+2026-09-27T01:06:40.494090+00:00  info  evaluator_result  support-024  skip
+2026-09-27T01:06:40.494091+00:00  info  evaluator_result  support-024  skip
+2026-09-27T01:06:40.494092+00:00  info  case_completion  support-024  passed
+2026-09-27T01:06:40.495315+00:00  info  evaluation_completion  completed
+2026-09-27T01:06:40.495317+00:00  info  decision</pre></div></div></body></html>
